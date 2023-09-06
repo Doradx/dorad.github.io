@@ -8,7 +8,10 @@ on:
         - master
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   notionSyncTask:
     name: Notion2Hugo on ubuntu-latest
@@ -45,7 +48,7 @@ jobs:
         if: steps.NotionSync.outputs.updated_count != '0'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: 'source/'
+          file_pattern: 'content/'
           commit_message: Automatic NotionSync.
 
   hugoBuildTask:
