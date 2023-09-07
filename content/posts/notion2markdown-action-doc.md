@@ -6,7 +6,9 @@ categories:
   - Notion
 tags:
   - Notion
-updated: 2023-09-07T09:20:00+00:00
+  - GitHub
+  - Action
+updated: 2023-09-07T09:23:00+00:00
 date: 2023-09-07T07:45:00+00:00
 slug: notion2markdown-action-doc
 title: "[Docs]Notion2markdown-action"
