@@ -42,7 +42,8 @@ jobs:
           output_page_dir: 'content/pages'
           output_post_dir: 'content/posts'
           clean_unpublished_post: true
-          keys_to_keep: slug
+          metas_keeped: slug
+          metas_excluded: pstatus, ptype
           last_sync_datetime: ${{ steps.GetNotionSyncDatetime.outputs.NOTION_SYNC_DATETIME }}
       - name: Commit & Push
         if: steps.NotionSync.outputs.updated_count != '0'
