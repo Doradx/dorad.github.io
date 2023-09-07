@@ -384,7 +384,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gitalk comment config
       [params.page.comment.gitalk]
         # 
-        enable = false
+        enable = true
         owner = "Doradx"
         repo = "gitalk-hugo"
         clientId = "eb1b4b73dba4774babad"
