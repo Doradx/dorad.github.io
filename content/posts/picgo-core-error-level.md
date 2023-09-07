@@ -11,7 +11,7 @@ description: >-
 tags:
   - Node.js
   - PicGo
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-09-05
 slug: picgo-core-error-level
 title: 尝试配置PicGo-Core日志输出等级

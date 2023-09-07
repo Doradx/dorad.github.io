@@ -9,7 +9,7 @@ tags:
   - 旅行
   - Budapest
   - 摄影
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-04-15
 slug: travel-budapest
 title: 布达佩斯|匈牙利游记(多图)

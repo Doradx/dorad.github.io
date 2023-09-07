@@ -9,7 +9,7 @@ tags:
   - Ubuntu
   - WLAN
   - WIFI
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-07-12
 slug: rasp-ubuntu-wlan
 title: 树莓派netplan连接开放网络(无密码WIFI)

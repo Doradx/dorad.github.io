@@ -8,7 +8,7 @@ description: 回来第一件事，是ChatGPT和NEW BING无法正常访问了，�
 tags:
   - Clash
   - ChatGPT
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-06-28
 slug: clash-chatgpt-newbing
 title: 折腾|Clash添加规则访问ChatGPT与NEW BING

@@ -7,7 +7,7 @@ created: 2023-04-12 22:34:00
 description: 光阴似箭，抵Wien已满10月，也快回国了。聊聊在维也纳的日常生活感受。
 tags:
   - Wien
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-04-18
 slug: wien-personal-feelings
 title: 维也纳|生活感受|交通|物价|通货膨胀

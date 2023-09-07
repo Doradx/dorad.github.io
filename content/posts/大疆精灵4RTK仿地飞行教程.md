@@ -9,7 +9,7 @@ tags:
   - 大疆
   - 仿地飞行
   - DEM
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2019-08-08
 title: 大疆精灵4RTK仿地飞行教程
 cover: https://i.cuger.cn/b/1647870299451-2019-08-08-21-16-24.png

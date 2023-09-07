@@ -7,7 +7,7 @@ description: 给Gay Hub上的各位安全地添加上备注。
 tags:
   - Tampermonkey
   - GitHub
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-04-17
 slug: github-remark
 title: GitHub Remark|给Gay Hub的小伙伴加备注

@@ -10,7 +10,7 @@ tags:
   - 图床
   - 图片压缩
   - CDN
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-04-22
 slug: picbed-batch-compress
 title: CDN流量太贵？图床图片批量压缩替换

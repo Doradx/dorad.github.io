@@ -7,7 +7,7 @@ tags:
   - Hexo
   - Blog
   - RSShub
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-07-07
 slug: blog-mood-sync-rsshub
 title: 微博/Twitter同步到博客瞬间方案-RSSHub

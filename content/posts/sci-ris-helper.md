@@ -13,7 +13,7 @@ tags:
   - 科研
   - 效率
   - Tampermonkey
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2021-10-23
 slug: sci-ris-helper
 title: EndNote导入PDF文件关联（SCI-RIS-Helper）插件

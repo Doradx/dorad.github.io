@@ -15,7 +15,7 @@ tags:
   - GitHub
   - Actions
   - Node.js
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-09-02
 slug: notion2markdown-action-demo
 title: notion2markdown-action渲染效果展示

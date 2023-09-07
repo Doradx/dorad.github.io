@@ -9,7 +9,7 @@ tags:
   - R9000P
   - 氮化镓
   - 电源适配器
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2022-02-06
 slug: r9000p-power-adapter
 title: 拯救者R9000P氮化镓电源适配器测评

@@ -8,7 +8,7 @@ description: 买的机器是欧版，仅包含欧洲主要语言，想办法解�
 tags:
   - A7M4
   - 摄影
-updated: 2023-09-07 11:03:00
+updated: 2023-09-07 11:23:00
 date: 2023-05-20
 slug: sony-a7m4-unlock-multi-languages
 title: Sony A7M4/M3欧版解锁多国语言
