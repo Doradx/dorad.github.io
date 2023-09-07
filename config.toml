@@ -392,11 +392,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gitalk comment config
       [params.page.comment.gitalk]
         # 
-        enable = true
+        enable = false
         owner = "Doradx"
         repo = "gitalk-hugo"
-        clientId = "eb1b4b73dba4774babad"
-        clientSecret = "3f39f81a519850591017e7af4651295a7be583ec"
+        clientId = ""
+        clientSecret = ""
       # Valine comment config
       [params.page.comment.valine]
         enable = false
@@ -442,9 +442,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         enable = false
       #  utterances comment config
       [params.page.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
-        repo = ""
+        repo = "Doradx/hugo-comments"
         issueTerm = "pathname"
         label = ""
         lightTheme = "github-light"
