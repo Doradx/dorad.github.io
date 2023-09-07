@@ -6,8 +6,8 @@ categories:
   - Notion
 tags:
   - Notion
-updated: 2023-09-07 16:35:00
-date: 2023-09-07
+updated: 2023-09-07 16:52:00
+date: 2023-09-07 15:45:00
 slug: notion2markdown-action-doc
 title: "[Docs]Notion2markdown-action"
 id: 4f72d1f5-b254-498c-b012-6f2466e6c35a
@@ -15,7 +15,7 @@ id: 4f72d1f5-b254-498c-b012-6f2466e6c35a
 
 # Notion2Markdown Action
 
-[[English]](notion://www.notion.so/doradx/readme_en.md) [[简体中文]](notion://www.notion.so/doradx/readme.md) [[详细介绍]](https://blog.cuger.cn/p/634642fd/?highlight=action)
+[[English]](https://github.com/Doradx/notion2markdown-action/blob/main/readme_en.md) [[简体中文]](https://github.com/Doradx/notion2markdown-action/blob/main/readme.md) [[详细介绍]](https://blog.cuger.cn/p/634642fd/?highlight=action)
 
 This GitHub Action converts pages from a Notion database into Markdown documents. It can be used for static blog generators like Hexo and Hugo. The action also includes PicGo-Core for uploading images to a picBed.
 
@@ -25,6 +25,8 @@ This GitHub Action converts pages from a Notion database into Markdown documents
 
 Notion app token. It is recommended to store this token in GitHub Action Secrets.
 
+> [How to get a Notion API key (Notion Secret)?](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC)
+
 ### `database_id` (required)
 
 The ID of the Notion database to convert. You can find this ID in the URL of your database page.
@@ -32,6 +34,8 @@ The ID of the Notion database to convert. You can find this ID in the URL of you
 Example:
 
 - If your database page URL is `https://www.notion.so/your-name/0f3d856498ca4db3b457c5b4eeaxxxxx`, then `database_id` is `0f3d856498ca4db3b457c5b4eeaxxxxx`.
+
+> Don’t forget to [connect](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC#e4bb58f3025746b481eb65155be04e0e) your page to the Integration!!!
 
 ### `status_name` (optional)
 
