@@ -10,7 +10,7 @@ tags:
   - Blog
   - GitHub
   - Action
-updated: 2023-09-07T12:20:00+00:00
+updated: 2023-09-07T12:42:00+00:00
 date: 2023-09-07T12:04:00+00:00
 slug: deploy-notion2hexo
 title: Deploy Notion2Markdown-Action for Hexo Project Using GitHub Actions
@@ -25,13 +25,39 @@ Before you get started, make sure you have the following prerequisites in place:
 
 ### Notion Database
 
-For Notion side, you have a prepare a notion dataset and notion integration secret.
+For Notion side, you have a prepare **a notion dataset** and **notion integration secret.**
 
-For the former, we provide a template here, feel free to duplicate it.
+For the former, we provide [a template here](/397943b2d0384e15ba69448900823984?v=06762d5d3e2140e399c03d84131ee682), feel free to duplicate it.
 
-1. A Hexo project set up with a compatible theme.
-2. Access to your Notion database, which you want to sync with your Hexo blog. Here is a [<u>template</u>](/397943b2d0384e15ba69448900823984?v=06762d5d3e2140e399c03d84131ee682) you can fork.
-3. A configured image hosting service (e.g., Imgur, GitHub Pages) for hosting images from your Notion content. (not necessary)
+For the notion integration, [here](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC#3dfedd0586ec402293add6e511478985) is a guide about how to get the integration secret and connect it to the dataset.
+
+> DO NOT FORGET TO [CONNECT THE DATABASE](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC#e4bb58f3025746b481eb65155be04e0e) TO YOUR NOTION INTEGRATION!!!
+
+At this point, `NOTION_SECRET` and `NOTION_DATABASE_ID` should have been obtained.
+
+### A configured image hosting service
+
+If you want to upload all the images hosted by notion, a configured image hosting service shoud be prepared for this action.
+
+Our picture bed service is based on [PicGo-Core](https://github.com/PicGo/PicGo-Core/blob/dev/README.md), so `smms/qiniu/upyun/tcyun/github/aliyun/imgur` are supported to be the backend service.
+
+And a JSON configure file should be prepared as `PIC_BED_CONFIG`, according to the [docs](https://picgo.github.io/PicGo-Core-Doc/zh/guide/config.html#picbed). Here is an example:
+
+```yaml
+{
+  "uploader": "aliyun",
+  "aliyun":
+    {
+      "accessKeyId": "",
+      "accessKeySecret": "",
+      "bucket": "",
+      "area": "",
+      "path": "",
+      "customUrl": "",
+      "options": "",
+    },
+}
+```
 
 ## GitHub Actions Workflow
 
@@ -103,16 +129,11 @@ Now, let's explain each part of the workflow in detail.
 1. **Schedule**: The workflow can be triggered manually or on a schedule using the `schedule` option. In this example, it runs every 30 minutes between 7 AM and 10 PM.
 2. **Permissions**: This workflow requires write permissions to the repository content to update your Hexo blog.
 3. **notionSyncTask**: This is the main job of the workflow.
-
    - **Checkout blog and theme**: It checks out your Hexo blog repository and its submodules.
    - **Check the NOTION_SYNC_DATETIME**: This step retrieves the latest sync datetime from the Git history for tracking changes.
    - **Convert notion to markdown**: This step uses the Notion2Markdown-Action to sync content from Notion to your Hexo blog. It requires several secrets and configurations:
-
      - `notion_secret`: Your Notion integration secret. [HOW TO GET IT?](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC#3dfedd0586ec402293add6e511478985)
      - `database_id`: The ID of the Notion database you want to sync. [HOW TO GET IT?](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC#3dfedd0586ec402293add6e511478985)
-
-     > DO NOT FORGET TO [CONNECT THE DATABASE](https://syncwith.com/gs/support/notion-api-key-qrsJHMnH5LuHUjDqvZnmWC#e4bb58f3025746b481eb65155be04e0e) TO YOUR NOTION INTEGRATION!!!
-
      - `pic_migrate`: Set to `true` to migrate images from Notion to your `pic_bed_config`.
      - `pic_bed_config`: Configuration for your image hosting service.
      - `pic_compress`: Set to `true` to compress images.
@@ -120,7 +141,6 @@ Now, let's explain each part of the workflow in detail.
      - `clean_unpublished_post`: Set to `true` to clean unpublished posts.
      - `metas_keeped` and `metas_excluded`: Metadata options.
      - `last_sync_datetime`: The datetime of the last sync, retrieved in the previous step.
-
    - **Hexo deploy**: This step runs when content has been updated. It pulls changes, installs dependencies, and deploys your Hexo blog.
    - **Commit & Push**: Also runs when content has been updated, it commits and pushes the changes to your repository with a specified commit message.
 
@@ -132,11 +152,13 @@ To use this workflow, you need to set up the following secrets in your GitHub re
 - `NOTION_DATABASE_ID`: The ID of the Notion database you want to sync.
 - `PICBED_CONFIG`: Configuration for your image hosting service.
 
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/92e7d463-8e7f-453f-9fc2-70f9ba0a8908/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230907%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230907T124539Z&X-Amz-Expires=3600&X-Amz-Signature=f650cf3a1ca680b1c1f242b0489860d7292b10c6af3a8e09a04afe1a353efbf3&X-Amz-SignedHeaders=host&x-id=GetObject)
+
 ## Enjoying!
 
 The workflow is usually triggered according to the schedule, but you can also trigger it manually to see whether it works fine. Tap `Actions→Notion2Hexo→Run workflow` to run it.
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/1b91b54d-01df-4754-af64-d2ab65da9b77/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230907%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230907T122014Z&X-Amz-Expires=3600&X-Amz-Signature=1ed439ea2ae1e1fb86ffd506abe5398a0875c96a0e8b4e97c97c8e8f0ea0785d&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/1b91b54d-01df-4754-af64-d2ab65da9b77/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230907%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230907T124539Z&X-Amz-Expires=3600&X-Amz-Signature=f584f5e5f307b4b11087afd70866e97a084164b5d25e7c3bbef36a94767b15ad&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## Conclusion
 
