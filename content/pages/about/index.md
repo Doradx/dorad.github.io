@@ -1,6 +1,6 @@
 ---
 created: 2023-09-07T06:27:00+00:00
-updated: 2023-09-07T09:20:00+00:00
+updated: 2023-09-07T10:22:00+00:00
 date: 2023-09-07T06:27:00+00:00
 slug: about
 title: About
@@ -13,6 +13,6 @@ A Ph.D. candidate with a love of photography and programming.
 
 # Contact
 
-- Email: ddxidAToutlook.com
+- Email: ddxid@outlook.com
 
 > Feel free to comment.
