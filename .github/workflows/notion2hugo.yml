@@ -5,7 +5,7 @@ on:
     - cron: '*/30 1-17/1 * * *'
   push:
     branches:
-        - master
+        - main
 
 permissions:
   contents: write
