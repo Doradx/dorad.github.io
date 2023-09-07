@@ -2,7 +2,7 @@ name: Notion2Hugo
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 1-17/1 * * *'
+    - cron: '*/45 * * * *'
 
 permissions:
   contents: write
@@ -33,7 +33,7 @@ jobs:
         with:
           notion_secret: ${{ secrets.NOTION_SECRET }}
           database_id: ${{ secrets.NOTION_DATABASE_ID }}
-          pic_migrate: true
+          pic_migrate: false
           pic_bed_config: ${{ secrets.PICBED_CONFIG }}
           pic_compress: true
           output_page_dir: 'content/pages'
