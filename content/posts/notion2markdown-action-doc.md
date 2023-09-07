@@ -8,7 +8,7 @@ tags:
   - Notion
   - GitHub
   - Action
-updated: 2023-09-07T09:23:00+00:00
+updated: 2023-09-07T11:35:00+00:00
 date: 2023-09-07T07:45:00+00:00
 slug: notion2markdown-action-doc
 title: "[Docs]Notion2markdown-action"
@@ -93,11 +93,7 @@ Example:
 
 ```json
 {
-  "current": "smms",
-  "uploader": "smms",
-  "smms": {
-    "token": ""
-  },
+  "uploader": "aliyun",
   "aliyun": {
     "accessKeyId": "",
     "accessKeySecret": "",
@@ -106,16 +102,6 @@ Example:
     "path": "",
     "customUrl": "",
     "options": ""
-  },
-  "tcyun": {
-    "secretId": "",
-    "secretKey": "",
-    "bucket": "",
-    "appId": "",
-    "area": "",
-    "path": "",
-    "customUrl": "",
-    "version": "v5"
   }
 }
 ```
@@ -130,7 +116,7 @@ Whether to enable image compression. Set to "true" to enable, default is "false.
 
 ### `timezone` (optional)
 
-Set the timezone. Default is "Asia/Shanghai."
+Set the timezone. Default is UTC.
 
 ## Outputs
 
