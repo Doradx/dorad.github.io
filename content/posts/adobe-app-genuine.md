@@ -9,7 +9,7 @@ description: 最近Adobe系列经常出现Your Adobe app is not
 tags:
   - Adobe
   - Clash
-updated: 2023-09-07 10:17:00
+updated: 2023-09-07 11:03:00
 date: 2023-09-05
 slug: adobe-app-genuine
 title: "[Adobe]Your Adobe app is not genuine解决方案-Clash版"

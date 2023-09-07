@@ -1,11 +1,9 @@
 ---
 created: 2023-06-04 19:53:00
 description: 相册目录
-status: 已发布
-type: page
-updated: 2023-09-04 22:44:00
-date: 2023-06-04 08:00:00
-filename: gallery
+updated: 2023-09-07 11:03:00
+date: 2023-06-04
+slug: gallery
 title: 光影集
 id: 85811655-990d-4cfb-8bd6-b7df1796d296
 ---

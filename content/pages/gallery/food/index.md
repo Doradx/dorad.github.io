@@ -1,11 +1,9 @@
 ---
 created: 2023-06-06 03:11:00
 description: 美食记录-相册
-status: 已发布
-type: page
-updated: 2023-09-04 09:43:00
-date: 2023-06-05 08:00:00
-filename: gallery/food
+updated: 2023-09-07 11:03:00
+date: 2023-06-05
+slug: gallery/food
 title: 美食
 cover: https://i.cuger.cn/b/2e6771c6-019d-4746-aa3d-c30dce3e90ae.jpg
 id: 1db24afc-fb4b-4562-9909-3d33d45f6c8d

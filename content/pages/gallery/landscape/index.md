@@ -2,11 +2,9 @@
 abbrlink: 42b0
 created: 2023-06-04 22:43:00
 description: 风光摄影相册
-status: 已发布
-type: page
-updated: 2023-09-04 09:43:00
-date: 2023-06-04 08:00:00
-filename: gallery/landscape
+updated: 2023-09-07 11:03:00
+date: 2023-06-04
+slug: gallery/landscape
 title: 自然风光
 cover: https://i.cuger.cn/b/ab28b150-c823-4bca-a223-34fd97de47ba.jpg
 id: d87824d6-b706-4a1e-b060-878b0c2909b5

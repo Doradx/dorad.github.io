@@ -10,7 +10,7 @@ description: 分享两个铁路信息查询网站，依次是China Railway
 tags:
   - 铁路
   - GIS
-updated: 2023-09-07 10:07:00
+updated: 2023-09-07 11:03:00
 date: 2023-08-17
 slug: tools-railway-maps
 title: 超实用的铁路地图网站

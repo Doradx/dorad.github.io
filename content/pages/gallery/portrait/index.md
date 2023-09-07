@@ -1,11 +1,9 @@
 ---
 created: 2023-06-04 22:42:00
 description: 人像摄影相册
-status: 已发布
-type: page
-updated: 2023-09-04 14:24:00
-date: 2023-06-04 08:00:00
-filename: gallery/portrait
+updated: 2023-09-07 11:03:00
+date: 2023-06-04
+slug: gallery/portrait
 title: 人像摄影
 cover: https://i.cuger.cn/b/1191b8ab-1d35-457e-88f0-5b24d28e78aa.jpg
 id: 980a4404-2fca-4dc0-b3fc-7a370342bf7a

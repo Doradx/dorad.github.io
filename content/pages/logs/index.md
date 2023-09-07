@@ -4,11 +4,9 @@ description: 站点日志
 tags:
   - Log
 comments: "false"
-status: 已发布
-type: page
-updated: 2023-09-04 09:43:00
-date: 2023-04-21 08:00:00
-filename: logs
+updated: 2023-09-07 11:03:00
+date: 2023-04-21
+slug: logs
 title: 站点日志
 id: b62d74d7-5f59-4fc5-b46f-0e6d5a742bbd
 ---

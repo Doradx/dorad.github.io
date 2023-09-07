@@ -2,11 +2,9 @@
 created: 2023-06-06 04:51:00
 description: 友情链接页面
 comments: "true"
-status: 已发布
-type: page
-updated: 2023-09-04 09:43:00
-date: 2023-06-05 08:00:00
-filename: link
+updated: 2023-09-07 11:03:00
+date: 2023-06-05
+slug: link
 title: 友情链接
 id: 750cea23-f2ce-4bfe-a1be-4c67c9ce1a5f
 ---
