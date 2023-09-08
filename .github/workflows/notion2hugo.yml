@@ -58,7 +58,6 @@ jobs:
     env:
       HUGO_VERSION: 0.114.0
     needs: sync
-    if: needs.notionSyncTask.outputs.HAS_CHANGES
     steps:
       - name: Install Hugo CLI
         run: |
