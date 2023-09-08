@@ -444,7 +444,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [params.page.comment.utterances]
         enable = true
         # owner/repo
-        repo = "Doradx/hugo-comments"
+        repo = "Doradx/doradx.github.io"
         issueTerm = "title"
         label = ""
         lightTheme = "github-light"
