@@ -153,13 +153,13 @@ To use this workflow, you need to set up the following secrets in your GitHub re
 - `NOTION_DATABASE_ID`: The ID of the Notion database you want to sync.
 - `PICBED_CONFIG`: Configuration for your image hosting service.
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/92e7d463-8e7f-453f-9fc2-70f9ba0a8908/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230909%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230909T063641Z&X-Amz-Expires=3600&X-Amz-Signature=55dad3753eba7e14a216bff4dbe8efa976ef763be86af67b74806bdc3408d462&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/92e7d463-8e7f-453f-9fc2-70f9ba0a8908/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230909%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230909T064801Z&X-Amz-Expires=3600&X-Amz-Signature=ba7e25be455b3d98286e0248316141dd38acefefc35299e508dec3c7418264cf&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## Enjoying!
 
 The workflow is usually triggered according to the schedule, but you can also trigger it manually to see whether it works fine. Tap `Actions→Notion2Hexo→Run workflow` to run it.
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/1b91b54d-01df-4754-af64-d2ab65da9b77/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230909%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230909T063641Z&X-Amz-Expires=3600&X-Amz-Signature=e8e8c5a5ff0a18ee1a83d5885271c57523ff967f4cd6ff18dcf12e782017ac39&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/1b91b54d-01df-4754-af64-d2ab65da9b77/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230909%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230909T064801Z&X-Amz-Expires=3600&X-Amz-Signature=9682a7ecfdd6172989695d58ca38c74ade5a154ab743e06661a455ec2a159320&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 ## Conclusion
 
