@@ -8,7 +8,7 @@ tags:
   - Notion
   - GitHub
   - Action
-updated: 2023-09-08T09:09:00+00:00
+updated: 2023-09-18T07:28:00+00:00
 date: 2023-09-07T07:45:00+00:00
 type: posts
 slug: notion2markdown-action-doc

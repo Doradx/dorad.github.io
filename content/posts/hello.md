@@ -6,7 +6,7 @@ categories:
 tags:
   - Hugo
   - Blog
-updated: 2023-09-09T01:39:00+00:00
+updated: 2023-09-18T07:28:00+00:00
 date: 2023-09-07T06:27:00+00:00
 type: posts
 slug: hello
