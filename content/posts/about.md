@@ -1,6 +1,6 @@
 ---
 created: 2023-09-07T06:27:00+00:00
-updated: 2023-09-08T09:08:00+00:00
+updated: 2023-10-31T08:15:00+00:00
 date: 2023-09-07T06:27:00+00:00
 type: page
 slug: about
@@ -26,6 +26,6 @@ So the GitHub Action will synchronize the pages `every 10 minutes` to keep it up
 
 # Contact
 
-- Email: ddxid@outlook.com
+- Email: xxdorad@gmail.com
 
 > Feel free to comment.
