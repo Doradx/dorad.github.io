@@ -1,14 +1,12 @@
 ---
 created: 2023-09-07T07:45:00+00:00
 categories:
-  - GitHub
-  - GitHub Action
-  - Notion
+  - notion2markdown
 tags:
   - Notion
   - GitHub
   - Action
-updated: 2023-09-18T07:28:00+00:00
+updated: 2023-12-25T02:03:00+00:00
 date: 2023-09-07T07:45:00+00:00
 type: posts
 slug: notion2markdown-action-doc

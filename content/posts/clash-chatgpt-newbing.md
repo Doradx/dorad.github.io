@@ -4,7 +4,7 @@ categories:
   - 工具
   - Clash
 description: 回来第一件事，是ChatGPT和NEW BING无法正常访问了，用VPN也经常被限制。由于用多了已经形成一定程度依赖，故折腾访问问题。
-updated: 2023-12-25T01:58:00+00:00
+updated: 2023-12-25T02:01:00+00:00
 date: 2023-12-25T01:57:00+00:00
 type: posts
 slug: clash-chatgpt-newbing
@@ -43,7 +43,7 @@ parsers: # array
         - DOMAIN-SUFFIX,vercel.app,♻️ 自动选择
         - DOMAIN-SUFFIX,githubusercontent.com,♻️ 自动选择
         - DOMAIN-SUFFIX,doi.org,♻️ 自动选择
-			append-proxies: # 加上自己的主机
+      append-proxies: # 加上自己的主机
         - name: BWG-SS # 主机名称
           type: ss # 类型
           server: 1.1.1.1 # IP

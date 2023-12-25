@@ -1,10 +1,9 @@
 ---
 created: 2023-12-25T01:57:00+00:00
 categories:
-  - GitHub Action
-  - Tool
+  - notion2markdown
 description: 封面描述
-updated: 2023-12-25T01:58:00+00:00
+updated: 2023-12-25T02:05:00+00:00
 date: 2023-12-25T01:57:00+00:00
 type: posts
 title: notion2markdown-action介绍
@@ -205,12 +204,12 @@ jobs:
 
 这里给出`Notion2hugo`的模板：
 
-```text
+```yaml
 name: Notion2Hugo
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 1-17/1 * * *'
+    - cron: "*/30 1-17/1 * * *"
 
 permissions:
   contents: write
@@ -227,7 +226,7 @@ jobs:
       - name: Checkout blog and theme
         uses: actions/checkout@v3
         with:
-          submodules: 'recursive'
+          submodules: "recursive"
           fetch-depth: 0
       - name: Check the NOTION_SYNC_DATETIME
         id: GetNotionSyncDatetime
@@ -244,8 +243,8 @@ jobs:
           pic_migrate: true
           pic_bed_config: ${{ secrets.PICBED_CONFIG }}
           pic_compress: true
-          output_page_dir: 'content/pages'
-          output_post_dir: 'content/posts'
+          output_page_dir: "content/pages"
+          output_post_dir: "content/posts"
           clean_unpublished_post: true
           metas_keeped: slug
           metas_excluded: pstatus, ptype
@@ -254,7 +253,7 @@ jobs:
         if: steps.NotionSync.outputs.updated_count != '0'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: 'content/'
+          file_pattern: "content/"
           commit_message: Automatic NotionSync.
 
   # Build job
