@@ -56,11 +56,11 @@ id: c5ebb4ea-b2c6-4a81-8d3b-f85933075306
 2.  参考`Notion`官方教程[Create an integration (notion.com)](https://developers.notion.com/docs/create-a-notion-integration)，创建**Notion integration**
     应用，并获取**`Secrets`**，保存该数据，会用作`NOTION_TOKEN`。直达链接：[My integrations | Notion Developers](https://www.notion.so/my-integrations)
 
-        ![Secrets存储位置](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/1b1883ea-24ce-4e2e-bcc9-c0d0d6be62a3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T165302Z&X-Amz-Expires=3600&X-Amz-Signature=2d611164cc2bf0884d58200cae2c7b18ed1b8125602d7f833105d648eaf29a9e&X-Amz-SignedHeaders=host&x-id=GetObject)
+        ![Secrets存储位置](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/1b1883ea-24ce-4e2e-bcc9-c0d0d6be62a3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T171040Z&X-Amz-Expires=3600&X-Amz-Signature=4b8611bb3d408d6676fbc509d9368d198abe42d76c6b3eb91388401c708c7862&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 3.  将创建的`Dataset`数据库授权给刚创建的`Integration`应用，如下图：
 
-![在Notion给Integration应用授权](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/6d2f3047-beae-41a2-984e-be64b9ddc508/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T165301Z&X-Amz-Expires=3600&X-Amz-Signature=3d4afc7d5c5fe8306b0b9084088a42598fa7a92c028008b6554ad71fe372c4b5&X-Amz-SignedHeaders=host&x-id=GetObject)
+![在Notion给Integration应用授权](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/6d2f3047-beae-41a2-984e-be64b9ddc508/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T171039Z&X-Amz-Expires=3600&X-Amz-Signature=cea9ff105c1792889bbd88772aaec88d3cb538eeba97df8ae026763bde3dba5b&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 就此，Notion 授权部分配置完成，得到`NOTION_TOKEN`和`NOTION_DATABASE_ID` 两项关键参数。
 
@@ -77,9 +77,9 @@ id: c5ebb4ea-b2c6-4a81-8d3b-f85933075306
 
 1. 切换到自己在`GitHub`上托管的仓库目录，`Actions→New workflow→set up a workflow yourself`，在`.github/workflows`目录下，创建`notion_sync.yml`配置文件
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/b48514df-cd08-4734-b3bc-0fbb9220f659/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T165301Z&X-Amz-Expires=3600&X-Amz-Signature=f9f984e34a9a5108a685fd8d6b7f95e9b359c19375a020cdf225bca6ee9c7959&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/b48514df-cd08-4734-b3bc-0fbb9220f659/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T171039Z&X-Amz-Expires=3600&X-Amz-Signature=e6df90cc4e81fea1d83d24e7b669210d6843ba2ed7b888fa52a8b511c6e14a83&X-Amz-SignedHeaders=host&x-id=GetObject)
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/3d83d3ac-75f2-4a52-b72e-1de3dce56cf5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T165301Z&X-Amz-Expires=3600&X-Amz-Signature=1a9891eaa63b3d014c3e299e5344b21cd1bf69e0b9ddef1ca6df4f0123fe40e8&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/3d83d3ac-75f2-4a52-b72e-1de3dce56cf5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240109T171039Z&X-Amz-Expires=3600&X-Amz-Signature=2d84685f4b6b9996d1baf8dd1c47aaca8a6c20a907a42eeadaab3b26c82ee365&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 1. 根据需要，复制下面的配置文档，粘贴到`notion_sync.yml`，并保存。此配置文件为基础版，不包含图床、图片压缩和博客部署等功能。
 
