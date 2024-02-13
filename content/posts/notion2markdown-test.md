@@ -10,13 +10,13 @@ updated: 2023-12-25T02:03:00+00:00
 date: 2023-09-07T06:17:00+00:00
 slug: notion2markdown-test
 title: Notion2markdown转换效果测试
-cover: https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/5f5e813e-2f53-4d48-a719-01cb0ff4fb6c/IMG_20230419_043151.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240213T162828Z&X-Amz-Expires=3600&X-Amz-Signature=ee571a815d2ebd78f2f1f01a34eff01b2e24ad69d49e9d1563a97458c0bbe7fb&X-Amz-SignedHeaders=host&x-id=GetObject
+cover: https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/5f5e813e-2f53-4d48-a719-01cb0ff4fb6c/IMG_20230419_043151.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240213T163940Z&X-Amz-Expires=3600&X-Amz-Signature=a21ae09178e7bf1a7464c59cc9315f4520d22fab81e3aa636d02a29bc094a136&X-Amz-SignedHeaders=host&x-id=GetObject
 id: 9250d46b-3912-455b-827c-61b90ac34a50
 ---
 
 # image
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/de3c4ed2-d664-4666-a4b2-6113bbca1dcc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240213T162828Z&X-Amz-Expires=3600&X-Amz-Signature=f060b75276b2d385d9e621bf76d9cbb68dcb9c44de2ababbf77f70063e6f82ee&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/de3c4ed2-d664-4666-a4b2-6113bbca1dcc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240213T163940Z&X-Amz-Expires=3600&X-Amz-Signature=43a546919a2bd948d9182c75b893d1f01c7a4bd8a35fe2c4d62b4b7f1fd49313&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 # link_preview
 
@@ -40,7 +40,7 @@ id: 9250d46b-3912-455b-827c-61b90ac34a50
 
 ## 本地
 
-<div class="pdf"><iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/99b71d70-f1cb-4957-9bbf-4760bec39c50/PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240213T162828Z&X-Amz-Expires=3600&X-Amz-Signature=08a57387e50656436c9f706f99838ad2991b199dc341a7ec1fe8fa4227bbca07&X-Amz-SignedHeaders=host&x-id=GetObject" style="width: 100%; margin:0; aspect-ratio: 16/9;"></iframe><div style="text-align: center; margin:0;"><p>测试的本地文件</p></div></div>
+<div class="pdf"><iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/9724a895-d6d5-4e82-9739-74885ea5ba68/99b71d70-f1cb-4957-9bbf-4760bec39c50/PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240213T163940Z&X-Amz-Expires=3600&X-Amz-Signature=264175971e695972cc21350c1e8d62822717377841b58d01b6fb5517a0e8b652&X-Amz-SignedHeaders=host&x-id=GetObject" style="width: 100%; margin:0; aspect-ratio: 16/9;"></iframe><div style="text-align: center; margin:0;"><p>测试的本地文件</p></div></div>
 
 ## 远程文件
 
